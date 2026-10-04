@@ -1,0 +1,4 @@
+- [ ] Build visual identity, shared navigation/footer, and homepage
+- [ ] Build service, about, projects, FAQ, contact, and legal pages
+- [ ] Connect quote/contact submission and private attachment storage
+- [ ] Verify interactions, responsiveness, metadata, and links

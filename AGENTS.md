@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep services and project examples in shared data modules so content can be replaced without editing page layouts.
+- Route public enquiries through validated server functions into private Cloud storage and an RLS-locked table, so anonymous visitors cannot read submissions.
