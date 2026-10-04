@@ -10,33 +10,81 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CateringEquipmentRouteImport } from './routes/catering-equipment'
+import { Route as MetalFabricationRouteImport } from './routes/metal-fabrication'
+import { Route as ServicesRouteImport } from './routes/services'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CateringEquipmentRoute = CateringEquipmentRouteImport.update({
+  id: '/catering-equipment',
+  path: '/catering-equipment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetalFabricationRoute = MetalFabricationRouteImport.update({
+  id: '/metal-fabrication',
+  path: '/metal-fabrication',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/catering-equipment': typeof CateringEquipmentRoute
+  '/metal-fabrication': typeof MetalFabricationRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/catering-equipment': typeof CateringEquipmentRoute
+  '/metal-fabrication': typeof MetalFabricationRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/catering-equipment': typeof CateringEquipmentRoute
+  '/metal-fabrication': typeof MetalFabricationRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/about' | '/catering-equipment' | '/metal-fabrication' | '/services'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    '/' | '/about' | '/catering-equipment' | '/metal-fabrication' | '/services'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/catering-equipment'
+    | '/metal-fabrication'
+    | '/services'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CateringEquipmentRoute: typeof CateringEquipmentRoute
+  MetalFabricationRoute: typeof MetalFabricationRoute
+  ServicesRoute: typeof ServicesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +96,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catering-equipment': {
+      id: '/catering-equipment'
+      path: '/catering-equipment'
+      fullPath: '/catering-equipment'
+      preLoaderRoute: typeof CateringEquipmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/metal-fabrication': {
+      id: '/metal-fabrication'
+      path: '/metal-fabrication'
+      fullPath: '/metal-fabrication'
+      preLoaderRoute: typeof MetalFabricationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CateringEquipmentRoute: CateringEquipmentRoute,
+  MetalFabricationRoute: MetalFabricationRoute,
+  ServicesRoute: ServicesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
