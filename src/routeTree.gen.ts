@@ -12,8 +12,14 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as CateringEquipmentRouteImport } from './routes/catering-equipment'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqsRouteImport } from './routes/faqs'
 import { Route as MetalFabricationRouteImport } from './routes/metal-fabrication'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as TermsRouteImport } from './routes/terms'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -30,9 +36,34 @@ const CateringEquipmentRoute = CateringEquipmentRouteImport.update({
   path: '/catering-equipment',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MetalFabricationRoute = MetalFabricationRouteImport.update({
   id: '/metal-fabrication',
   path: '/metal-fabrication',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuoteRoute = QuoteRouteImport.update({
+  id: '/quote',
+  path: '/quote',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -40,51 +71,106 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/catering-equipment': typeof CateringEquipmentRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
   '/metal-fabrication': typeof MetalFabricationRoute
+  '/privacy': typeof PrivacyRoute
+  '/projects': typeof ProjectsRoute
+  '/quote': typeof QuoteRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/catering-equipment': typeof CateringEquipmentRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
   '/metal-fabrication': typeof MetalFabricationRoute
+  '/privacy': typeof PrivacyRoute
+  '/projects': typeof ProjectsRoute
+  '/quote': typeof QuoteRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/catering-equipment': typeof CateringEquipmentRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
   '/metal-fabrication': typeof MetalFabricationRoute
+  '/privacy': typeof PrivacyRoute
+  '/projects': typeof ProjectsRoute
+  '/quote': typeof QuoteRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/about' | '/catering-equipment' | '/metal-fabrication' | '/services'
+    | '/'
+    | '/about'
+    | '/catering-equipment'
+    | '/contact'
+    | '/faqs'
+    | '/metal-fabrication'
+    | '/privacy'
+    | '/projects'
+    | '/quote'
+    | '/services'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
   to:
-    '/' | '/about' | '/catering-equipment' | '/metal-fabrication' | '/services'
+    | '/'
+    | '/about'
+    | '/catering-equipment'
+    | '/contact'
+    | '/faqs'
+    | '/metal-fabrication'
+    | '/privacy'
+    | '/projects'
+    | '/quote'
+    | '/services'
+    | '/terms'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/catering-equipment'
+    | '/contact'
+    | '/faqs'
     | '/metal-fabrication'
+    | '/privacy'
+    | '/projects'
+    | '/quote'
     | '/services'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   CateringEquipmentRoute: typeof CateringEquipmentRoute
+  ContactRoute: typeof ContactRoute
+  FaqsRoute: typeof FaqsRoute
   MetalFabricationRoute: typeof MetalFabricationRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ProjectsRoute: typeof ProjectsRoute
+  QuoteRoute: typeof QuoteRoute
   ServicesRoute: typeof ServicesRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -110,11 +196,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CateringEquipmentRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/metal-fabrication': {
       id: '/metal-fabrication'
       path: '/metal-fabrication'
       fullPath: '/metal-fabrication'
       preLoaderRoute: typeof MetalFabricationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quote': {
+      id: '/quote'
+      path: '/quote'
+      fullPath: '/quote'
+      preLoaderRoute: typeof QuoteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -124,6 +245,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -131,8 +259,14 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   CateringEquipmentRoute: CateringEquipmentRoute,
+  ContactRoute: ContactRoute,
+  FaqsRoute: FaqsRoute,
   MetalFabricationRoute: MetalFabricationRoute,
+  PrivacyRoute: PrivacyRoute,
+  ProjectsRoute: ProjectsRoute,
+  QuoteRoute: QuoteRoute,
   ServicesRoute: ServicesRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
