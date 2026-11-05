@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/services</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/catering-equipment</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/metal-fabrication</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/projects</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/about</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/faqs</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/contact</loc></url><url><loc>https://id-preview--3b4942d0-6c3b-5142-9aeb-acd4d1fc5956.lovable.app/quote</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/services</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/catering-equipment</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/metal-fabrication</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/projects</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/about</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/faqs</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/contact</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/quote</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/privacy</loc></url>
+  <url><loc>https://blue-spark-fab.bluespark.workers.dev/terms</loc></url>
+</urlset>
