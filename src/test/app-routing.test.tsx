@@ -19,6 +19,7 @@ describe("App routing", () => {
     "/quote",
     "/privacy",
     "/terms",
+    "/admin/enquiries",
   ] as const;
 
   it.each(publicRoutes)("matches a page for %s instead of falling back to not found", (path) => {
