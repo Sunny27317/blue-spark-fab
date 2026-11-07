@@ -2,5 +2,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "blue-spark-fab",
-  "previews": {}
+  "keep_vars": true,
+  "previews": {
+    "vars": {
+      "SUPABASE_URL": "https://gecmjygwknxawtwtfoql.supabase.co"
+    }
+  }
 }
