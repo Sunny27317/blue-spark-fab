@@ -4,8 +4,8 @@ import cooker from '@/assets/cooker.jpg';
 import gate from '@/assets/gate.jpg';
 
 export const imagery = { hero, table, cooker, gate };
-export const phone = '07438 355784';
-export const whatsapp = 'https://wa.me/447438355784';
+export const phone = '07404 092144';
+export const whatsapp = 'https://wa.me/447404092144';
 export const address = 'Unit 5, 4 Playfair Road, Leeds LS10 2JP';
 export const services = [
   { title: 'Commercial Catering Equipment', description: 'Practical, hard-working equipment made around the needs of your kitchen.', image: table, to: '/catering-equipment' },
@@ -18,10 +18,20 @@ export const services = [
   { title: 'Custom Metalwork', description: 'One-off pieces and unusual requirements: start with a sketch or photo.', image: hero, to: '/metal-fabrication' },
 ] as const;
 export const projects = [
-  { slug: 'stainless-preparation-tables', title: 'Stainless preparation tables', category: 'Tables', image: table, description: 'Illustrative example of made-to-measure preparation surfaces for working kitchens.', materials: 'Stainless steel', location: 'Leeds', services: ['Catering equipment', 'Stainless fabrication'], featured: true, date: '' },
-  { slug: 'commercial-cooking-equipment', title: 'Commercial cooking equipment', category: 'Cookers', image: cooker, description: 'Illustrative example of robust cooker and grill fabrication for commercial use.', materials: 'Stainless steel', location: 'Leeds', services: ['Catering equipment'], featured: true, date: '' },
-  { slug: 'bespoke-steel-gates', title: 'Bespoke steel gates', category: 'Gates', image: gate, description: 'Illustrative example of metal gates made to suit a property’s dimensions.', materials: 'Steel', location: 'Leeds', services: ['Metal fabrication'], featured: true, date: '' },
-  { slug: 'workshop-fabrication', title: 'Bespoke workshop fabrication', category: 'Custom Metalwork', image: hero, description: 'Illustrative view of the fabrication process. Real project photographs can be added here.', materials: 'Made to specification', location: 'Leeds', services: ['Metal fabrication'], featured: false, date: '' },
+  {slug:'driveway-metal-gates',title:'Driveway metal gates',category:'Gates',image:'/work/work-01.webp',description:'Steel driveway gates with vertical panels.',materials:'Steel',location:'',services:['Metal fabrication'],featured:true,date:''},
+  {slug:'gate-installation',title:'Double-gate installation',category:'Gates',image:'/work/work-02.webp',description:'Wide double-leaf gate installation.',materials:'Steel',location:'',services:['Metal fabrication'],featured:true,date:''},
+  {slug:'pedestrian-security-gate',title:'Pedestrian security gate',category:'Gates',image:'/work/work-03.webp',description:'Pedestrian access gate with secure frame.',materials:'Steel',location:'',services:['Metal fabrication'],featured:false,date:''},
+  {slug:'side-entrance-gate',title:'Side entrance gate',category:'Gates',image:'/work/work-04.webp',description:'Custom steel access gate.',materials:'Steel',location:'',services:['Metal fabrication'],featured:false,date:''},
+  {slug:'stainless-equipment',title:'Stainless kitchen equipment',category:'Catering Equipment',image:'/work/work-05.webp',description:'Stainless-steel catering fabrication.',materials:'Stainless steel',location:'',services:['Catering equipment'],featured:true,date:''},
+  {slug:'commercial-cooker-workshop',title:'Commercial cooker fabrication',category:'Catering Equipment',image:'/work/work-06.webp',description:'Commercial cooker during workshop fabrication.',materials:'Steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'commercial-cooker-detail',title:'Commercial cooker detail',category:'Catering Equipment',image:'/work/work-07.webp',description:'Another view of the cooking equipment.',materials:'Steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'burner-assembly',title:'Burner assembly',category:'Catering Equipment',image:'/work/work-08.webp',description:'Close-up of a cooking burner assembly.',materials:'Steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'cooker-pair',title:'Commercial catering units',category:'Catering Equipment',image:'/work/work-09.webp',description:'Two assembled cooking units in the workshop.',materials:'Steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'single-cooker',title:'Single commercial cooker',category:'Catering Equipment',image:'/work/work-10.webp',description:'Stainless commercial cooking unit.',materials:'Stainless steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'cooker-top',title:'Cooking burner top view',category:'Catering Equipment',image:'/work/work-11.webp',description:'Top view of a fabricated commercial cooking unit.',materials:'Steel',location:'',services:['Catering equipment'],featured:false,date:''},
+  {slug:'garden-side-gate',title:'Garden side gate',category:'Gates',image:'/work/work-12.webp',description:'Steel gate for a narrow side entrance.',materials:'Steel',location:'',services:['Metal fabrication'],featured:false,date:''},
+  {slug:'garden-gate-detail',title:'Installed garden gate',category:'Gates',image:'/work/work-13.webp',description:'Installed gate between brick walls.',materials:'Steel',location:'',services:['Metal fabrication'],featured:false,date:''},
+  {slug:'steel-panel-gate',title:'Steel panel gate',category:'Gates',image:'/work/work-14.webp',description:'Fabricated steel gate panel.',materials:'Steel',location:'',services:['Metal fabrication'],featured:false,date:''},
 ] as const;
 export const faqs = [
   ['Do you manufacture custom sizes?', 'Yes. Tell us the measurements and how the piece needs to work in your space.'],
